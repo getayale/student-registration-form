@@ -17,10 +17,7 @@ A simple and responsive **Student Registration Form** built using **HTML**, **Bo
 - Custom CSS styling for better visuals
 - Easy to customize and extend
 
-## Preview
 
-![Form Preview](screenshot.png)  
-*(You can take a screenshot of your form and add it here)*
 
 ## Installation
 
