@@ -23,7 +23,7 @@ A simple and responsive **Student Registration Form** built using **HTML**, **Bo
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/student-registration-form.git
+   git clone https://github.com/getayale/student-registration-form.git
 
 
 
