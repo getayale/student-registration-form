@@ -7,58 +7,97 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        /* Page background gradient */
         body {
-            background-color: gray; /* page background */
+            background: linear-gradient(135deg, #4a90e2, #50e3c2);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
         }
+
+        /* Registration form styling */
         .registration-form {
             max-width: 600px;
-            margin: 50px auto;
-            padding: 30px;
-            background: #cce7ff; /* form background color */
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
         }
+
+        /* Header and logo */
         .registration-form h2 {
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             color: #333;
         }
+        .registration-form .logo {
+            display: block;
+            margin: 0 auto 15px auto;
+            width: 80px;
+            border-radius: 50%;
+        }
+
+        /* Rounded input fields */
+        .form-control {
+            border-radius: 25px;
+            padding: 12px 20px;
+            transition: all 0.3s ease;
+        }
         .form-control:focus {
-            box-shadow: none;
+            box-shadow: 0 0 5px rgba(74,144,226,0.5);
             border-color: #4a90e2;
         }
+
+        /* Rounded buttons with hover effect */
         .btn-primary {
             background-color: #4a90e2;
             border: none;
+            border-radius: 25px;
+            padding: 12px;
+            transition: all 0.3s ease;
         }
         .btn-primary:hover {
             background-color: #357ab7;
+            transform: scale(1.05);
+        }
+
+        /* Responsive spacing for form rows */
+        .row > .col-md-6 {
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
 
 <div class="registration-form">
+    <!-- Optional Logo -->
+    <img src="logo.png" alt="Logo" class="logo"> 
+
     <h2>Student Registration</h2>
     <form>
-        <div class="mb-3">
-            <label for="fullname" class="form-label">Full Name</label>
-            <input type="text" class="form-control" id="fullname" placeholder="Enter your full name" required>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="fullname" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullname" placeholder="Enter your full name" required>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
         </div>
 
-        <div class="mb-3">
-            <label for="email" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-        </div>
-
-        <div class="mb-3">
-            <label for="phone" class="form-label">Phone Number</label>
-            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
-        </div>
-
-        <div class="mb-3">
-            <label for="dob" class="form-label">Date of Birth</label>
-            <input type="date" class="form-control" id="dob" required>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="col-md-6">
+                <label for="dob" class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" id="dob" required>
+            </div>
         </div>
 
         <div class="mb-3">
@@ -76,17 +115,18 @@
             <input type="text" class="form-control" id="course" placeholder="Enter course name" required>
         </div>
 
-        <div class="mb-3">
-            <label for="password" class="form-label">Password</label>
-            <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+            </div>
+            <div class="col-md-6">
+                <label for="confirm-password" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm-password" placeholder="Confirm password" required>
+            </div>
         </div>
 
-        <div class="mb-3">
-            <label for="confirm-password" class="form-label">Confirm Password</label>
-            <input type="password" class="form-control" id="confirm-password" placeholder="Confirm password" required>
-        </div>
-
-        <button type="submit" class="btn btn-primary w-100">Register</button>
+        <button type="submit" class="btn btn-primary w-100 mt-4">Register</button>
     </form>
 </div>
 
