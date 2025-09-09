@@ -1,29 +1,37 @@
 # Student Registration Form
 
-A simple and responsive **Student Registration Form** built using **HTML**, **Bootstrap 5**, and custom CSS. This form can be used for educational projects, websites, or student management systems.
+A **responsive and modern student registration form** built with **HTML, CSS, and Bootstrap**. This project allows users to register with their personal details in a clean, user-friendly interface.
+## **Features**
+- Full Name, Email, Phone Number, Date of Birth, Gender, and Course fields  
+- Password and Confirm Password validation  
+- Responsive layout for mobile and desktop  
+- Modern UI with rounded inputs and buttons  
+- Hover effects on buttons for better interactivity  
+- Optional login page (`login.html`) for demonstration purposes  
 
-## Features
+---
 
-- Responsive design using **Bootstrap 5**
-- Modern and clean user interface
-- Form fields include:
-  - Full Name
-  - Email Address
-  - Phone Number
-  - Date of Birth
-  - Gender
-  - Course
-  - Password & Confirm Password
-- Custom CSS styling for better visuals
-- Easy to customize and extend
-
+## **Technologies Used**
+- HTML5  
+- CSS3  
+- Bootstrap 5  
 
 
-## Installation
 
+## **Live Demo**
+Check the live form hosted via GitHub Pages:  
+[Student Registration Form](https://getayale.github.io/student-registration-form/index.html) 
+    (https://getayale.github.io/student-registration-form/login.html)
+
+---
+
+## **Installation / Local Setup**
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/getayale/student-registration-form.git
+
+```bash
+git clone https://github.com/getayale/student-registration-form.git
+
+
 
 
 
